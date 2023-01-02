@@ -27,6 +27,7 @@ class CastingTest1 {
         fe.water();
         car = fe;   // car = (Car)fe;에서 형변환이 생략된 형태다.
         // car.water(); // 컴파일 에러. Car 타입의 참조변수로는 water()를 호출할 수 없다.
+        if (car instanceof  FireEngine) System.out.println("yes");
         fe2 = (FireEngine) car; // 조상타입 -> 자손타입
         fe2.water();
     }
